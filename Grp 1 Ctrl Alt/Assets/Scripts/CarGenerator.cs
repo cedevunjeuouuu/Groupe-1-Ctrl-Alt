@@ -16,13 +16,16 @@ public class CarGenerator : MonoBehaviour
 
     IEnumerator SpawnCoroutine()
     {
-        if (Random.Range(0, 100 - spawnProbability) == 1)
+        while (true)
         {
-            if (allCars.Length != 0)
+            if (Random.Range(0, 100 / spawnProbability) == 1)
             {
-                Instantiate(allCars[Random.Range(0, allCars.Length)], transform);
+                if (allCars.Length != 0)
+                {
+                    Instantiate(allCars[Random.Range(0, allCars.Length)], transform);
+                }
             }
+            yield return new WaitForSeconds(1f / spawnSpeed);
         }
-        yield return new WaitForSeconds(1f / spawnSpeed);
     }
 }
