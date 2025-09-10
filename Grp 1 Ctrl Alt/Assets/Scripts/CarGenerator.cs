@@ -6,6 +6,7 @@ public class CarGenerator : MonoBehaviour
 {
     [SerializeField] private int spawnProbability = 50;
     [SerializeField] private float spawnSpeed = 1;
+    [SerializeField] private GameObject[] allCars;
 
     private void Start()
     {
@@ -17,9 +18,11 @@ public class CarGenerator : MonoBehaviour
     {
         if (Random.Range(0, 100 - spawnProbability) == 1)
         {
-            // spawn une voiture qui se deplace vers le joueur à la position du spawner
+            if (allCars.Length != 0)
+            {
+                Instantiate(allCars[Random.Range(0, allCars.Length)], transform);
+            }
         }
         yield return new WaitForSeconds(1f / spawnSpeed);
     }
-    
 }
