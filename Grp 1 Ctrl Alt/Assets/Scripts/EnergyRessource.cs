@@ -1,11 +1,13 @@
 using System;
 using System.Collections;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class EnergyRessource : MonoBehaviour
 {
     [SerializeField] private float startEnergy = 100f;
     [SerializeField] private float looseSpeed = 1f;
+    [SerializeField] private Slider sliderRef;
     private float _actualEnergyValue;
 
     private void Start()
@@ -29,6 +31,7 @@ public class EnergyRessource : MonoBehaviour
         while (true)
         {
             Remove(1f);
+            sliderRef.value = _actualEnergyValue;
             yield return new WaitForSeconds(1f / looseSpeed);
         }
     }
