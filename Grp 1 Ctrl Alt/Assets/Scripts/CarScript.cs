@@ -22,7 +22,7 @@ public class CarScript : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            FindObjectOfType<SusRessource>().Add(penality);
+            FindFirstObjectByType<SusRessource>().Add(penality);
         }
     }
 

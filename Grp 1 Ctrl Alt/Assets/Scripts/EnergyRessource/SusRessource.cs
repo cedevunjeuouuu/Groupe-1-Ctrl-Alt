@@ -1,4 +1,3 @@
-
 using System;
 using System.Collections;
 using UnityEngine;
@@ -12,7 +11,7 @@ public class SusRessource : MonoBehaviour
 
     private void Start()
     {
-        _actualEnergyValue = startEnergy;
+        _actualEnergyValue = startSus;
         sliderRef.value = _actualEnergyValue;
     }
 
