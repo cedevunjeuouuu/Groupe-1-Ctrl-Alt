@@ -1225,6 +1225,7 @@ GameObject:
   - component: {fileID: 1397233152}
   - component: {fileID: 1397233151}
   - component: {fileID: 1397233150}
+  - component: {fileID: 1397233153}
   m_Layer: 0
   m_Name: holder
   m_TagString: Untagged
@@ -1277,12 +1278,12 @@ MonoBehaviour:
   sus: {fileID: 1397233151}
   piss: {fileID: 1397233152}
   energy: {fileID: 1397233148}
-  SusAddValue: 0
-  SusRemoveValue: 0
-  PissAddValue: 0
-  PissRemoveValue: 0
-  EnergyAddValue: 0
-  EnergyRemoveValue: 0
+  SusAddValue: 10
+  SusRemoveValue: 10
+  PissAddValue: 10
+  PissRemoveValue: 10
+  EnergyAddValue: 10
+  EnergyRemoveValue: 10
 --- !u!114 &1397233151
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1312,6 +1313,36 @@ MonoBehaviour:
   startPiss: 0
   looseSpeed: 1
   sliderRef: {fileID: 1639816398}
+--- !u!114 &1397233153
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1397233147}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.InputSystem::UnityEngine.InputSystem.PlayerInput
+  m_Actions: {fileID: -944628639613478452, guid: 2622dffe7337a7d4b97098d0fb215a2d, type: 3}
+  m_NotificationBehavior: 0
+  m_UIInputModule: {fileID: 0}
+  m_DeviceLostEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_DeviceRegainedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ControlsChangedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ActionEvents: []
+  m_NeverAutoSwitchControlSchemes: 0
+  m_DefaultControlScheme: 
+  m_DefaultActionMap: gdtest
+  m_SplitScreenIndex: -1
+  m_Camera: {fileID: 0}
 --- !u!1 &1434763651
 GameObject:
   m_ObjectHideFlags: 0
@@ -1533,9 +1564,9 @@ MonoBehaviour:
   m_HandleRect: {fileID: 933784072}
   m_Direction: 0
   m_MinValue: 0
-  m_MaxValue: 1
+  m_MaxValue: 100
   m_WholeNumbers: 0
-  m_Value: 0
+  m_Value: 45.5
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -1575,7 +1606,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -396, y: -24}
+  m_AnchoredPosition: {x: -384, y: -154}
   m_SizeDelta: {x: 160, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1634057043
@@ -1623,9 +1654,9 @@ MonoBehaviour:
   m_HandleRect: {fileID: 363494990}
   m_Direction: 0
   m_MinValue: 0
-  m_MaxValue: 1
-  m_WholeNumbers: 0
-  m_Value: 0.607
+  m_MaxValue: 100
+  m_WholeNumbers: 1
+  m_Value: 50
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -1665,7 +1696,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -384.09506, y: -147.1293}
+  m_AnchoredPosition: {x: -384.09506, y: -15}
   m_SizeDelta: {x: 160, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1639816398
@@ -1713,9 +1744,9 @@ MonoBehaviour:
   m_HandleRect: {fileID: 478645253}
   m_Direction: 0
   m_MinValue: 0
-  m_MaxValue: 1
+  m_MaxValue: 100
   m_WholeNumbers: 0
-  m_Value: 0.576
+  m_Value: 51.8
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []

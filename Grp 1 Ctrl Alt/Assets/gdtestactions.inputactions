@@ -1,0 +1,135 @@
+{
+    "version": 1,
+    "name": "gdtestactions",
+    "maps": [
+        {
+            "name": "gdtest",
+            "id": "f42f1ce9-cccc-4ffc-b474-8fbfaf7c4c71",
+            "actions": [
+                {
+                    "name": "SusAdd",
+                    "type": "Value",
+                    "id": "bb36cdc7-e896-499f-9016-31f567036b7d",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "SusRemove",
+                    "type": "Button",
+                    "id": "5a6f468d-6749-4439-a400-85a569fdb034",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "PissAdd",
+                    "type": "Button",
+                    "id": "a2f30d10-0163-4e1d-a55f-53e293e804ea",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "PissRemove",
+                    "type": "Button",
+                    "id": "4549bc59-9bd9-4843-a4db-d2e83c4038b7",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "EnergyAdd",
+                    "type": "Button",
+                    "id": "b6fbf333-b42b-4d96-b9aa-e7c2825259e9",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "EnergyRemove",
+                    "type": "Button",
+                    "id": "dbdf1e80-ce16-42c8-bcbb-81a1e800ec8c",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "d21e924b-2696-4eae-9ad4-28cac0353220",
+                    "path": "<Keyboard>/q",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "SusAdd",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "e40ede8f-6698-4fea-94c2-dd5da33f5d30",
+                    "path": "<Keyboard>/w",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "SusRemove",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "a49f0e66-01ed-4948-bdca-a0df1b60fb6b",
+                    "path": "<Keyboard>/a",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "PissAdd",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "e1560fac-4ed1-4d77-8fa7-a47b9115e5d3",
+                    "path": "<Keyboard>/s",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "PissRemove",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "e41ad41d-dad6-43e1-a929-a99d5c0ecbfb",
+                    "path": "<Keyboard>/z",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "EnergyAdd",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "8ca32f26-e0d0-4d6a-aae9-bd1592bb9689",
+                    "path": "<Keyboard>/x",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "EnergyRemove",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}

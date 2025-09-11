@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class GDTestScript : MonoBehaviour
 {
@@ -9,32 +10,32 @@ public class GDTestScript : MonoBehaviour
     [SerializeField]
     private float SusAddValue, SusRemoveValue, PissAddValue, PissRemoveValue, EnergyAddValue, EnergyRemoveValue;
 
-    public void OnSusAdd()
+    public void OnSusAdd(InputValue _)
     {
         sus.Add(SusAddValue);
     }
 
-    public void OnSusRemove()
+    public void OnSusRemove(InputValue _)
     {
         sus.Remove(SusRemoveValue);
     }
 
-    public void OnPissAdd()
+    public void OnPissAdd(InputValue _)
     {
         piss.Add(PissAddValue);
     }
 
-    public void OnPissRemove()
+    public void OnPissRemove(InputValue _)
     {
         piss.Remove(PissRemoveValue);
     }
 
-    public void OnEnergyAdd()
+    public void OnEnergyAdd(InputValue _)
     {
         energy.Add(EnergyAddValue);
     }
 
-    public void OnEnergyRemove()
+    public void OnEnergyRemove(InputValue _)
     {
         energy.Remove(EnergyRemoveValue);
     }
