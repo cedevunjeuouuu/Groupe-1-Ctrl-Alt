@@ -30,6 +30,7 @@ public class SusRessource : MonoBehaviour
         {
             // do stuff
         }
+        _actualEnergyValue = MathF.Min(sliderRef.maxValue, _actualEnergyValue);
     }
 
     public void Remove(float value)

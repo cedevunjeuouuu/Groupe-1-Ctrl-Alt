@@ -22,12 +22,15 @@ public class EnergyRessource : MonoBehaviour
     public void Add(float value) // quand on boit une biere
     {
         _actualEnergyValue += value;
+        _actualEnergyValue = MathF.Min(sliderRef.maxValue, _actualEnergyValue);
         sliderRef.value = _actualEnergyValue;
+
     }
 
     public void Remove(float value)
     {
         _actualEnergyValue -= value;
+        _actualEnergyValue = MathF.Max(sliderRef.minValue, _actualEnergyValue);
         sliderRef.value = _actualEnergyValue;
     }
 

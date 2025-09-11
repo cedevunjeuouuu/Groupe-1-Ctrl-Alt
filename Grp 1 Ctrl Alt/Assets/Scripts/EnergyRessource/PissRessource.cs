@@ -30,6 +30,7 @@ public class PissRessource : MonoBehaviour
         {
             // do piss
         }
+        _actualEnergyValue = MathF.Min(sliderRef.maxValue, _actualEnergyValue);
     }
 
     public void Remove(float value)
