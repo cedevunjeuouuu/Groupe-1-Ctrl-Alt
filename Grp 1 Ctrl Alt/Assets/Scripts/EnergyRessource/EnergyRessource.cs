@@ -10,10 +10,13 @@ public class EnergyRessource : MonoBehaviour
     [SerializeField] private Slider sliderRef;
     private float _actualEnergyValue;
 
+    [SerializeField]
+    private bool autodefill = false;
+
     private void Start()
     {
         _actualEnergyValue = startEnergy;
-        StartCoroutine(LooseUpdate());
+        if (autodefill) StartCoroutine(LooseUpdate());
     }
 
     public void Add(float value) // quand on boit une biere
