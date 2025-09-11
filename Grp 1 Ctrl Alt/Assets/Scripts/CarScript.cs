@@ -23,5 +23,5 @@ public class CarScript : MonoBehaviour
         }
     }
     
-    // rajouter des fonctions genre appel de phare et tout pour oui
+    // rajouter des fonctions genre appel de phare et tout pour immersion
 }
