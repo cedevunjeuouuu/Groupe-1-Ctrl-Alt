@@ -506,8 +506,8 @@ GameObject:
   m_Component:
   - component: {fileID: 2007390142}
   - component: {fileID: 2007390141}
-  - component: {fileID: 2007390140}
   - component: {fileID: 2007390143}
+  - component: {fileID: 2007390144}
   m_Layer: 0
   m_Name: ControlManager
   m_TagString: Untagged
@@ -515,18 +515,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &2007390140
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2007390139}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 55b3958c103d849ebad35fa966811ea8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::BasicTestController
 --- !u!114 &2007390141
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -585,6 +573,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ControllerManager
   target: {fileID: 1998057527}
+--- !u!114 &2007390144
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2007390139}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: deb8a4dcaa98dafbe8be0a7a11311cb2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TestControllerMouse2
+  velocity: 0
+  acceleration: 0
+  velocity_cap: 0.3
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
