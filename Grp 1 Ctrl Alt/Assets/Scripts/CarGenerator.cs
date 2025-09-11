@@ -4,7 +4,7 @@ using Random = UnityEngine.Random;
 
 public class CarGenerator : MonoBehaviour
 {
-    [SerializeField] private int spawnProbability = 50;
+    [SerializeField] private int spawnProbability = 20;
     [SerializeField] private float spawnSpeed = 1;
     [SerializeField] private GameObject[] allCars;
 

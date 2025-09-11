@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using DG.Tweening;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -31,7 +32,7 @@ public class EnergyRessource : MonoBehaviour
         while (true)
         {
             Remove(1f);
-            sliderRef.value = _actualEnergyValue;
+            sliderRef.DOValue(_actualEnergyValue, 1f / looseSpeed).SetEase(Ease.Linear);
             yield return new WaitForSeconds(1f / looseSpeed);
         }
     }
