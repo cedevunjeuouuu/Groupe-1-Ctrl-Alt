@@ -110,7 +110,7 @@ SphereCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Radius: 0.5
+  m_Radius: 2
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &7279139003821009253
 GameObject:
@@ -122,6 +122,7 @@ GameObject:
   m_Component:
   - component: {fileID: 911162860297883881}
   - component: {fileID: 4664725874225079}
+  - component: {fileID: 1153204152574865945}
   m_Layer: 0
   m_Name: beer
   m_TagString: Untagged
@@ -157,3 +158,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ba8eebc1e7b63548adf2aba0335eadc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BeerBottle
+--- !u!114 &1153204152574865945
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7279139003821009253}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26e4487f07ed61db18fe9d5905bac25d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Mover
+  endPosition: {x: 0, y: 0, z: 0}
+  timeToCompleteMovement: 5

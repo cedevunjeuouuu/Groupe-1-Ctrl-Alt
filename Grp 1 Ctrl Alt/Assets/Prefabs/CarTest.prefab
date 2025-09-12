@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 3386845065086993061}
   - component: {fileID: 6216082551825221997}
   - component: {fileID: 2362815396215326723}
+  - component: {fileID: 4060222024717537756}
   m_Layer: 0
   m_Name: CarTest
   m_TagString: Untagged
@@ -125,8 +126,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67e5174f6fdc32a4bb085bcb3088ce77, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CarScript
-  endPosition: {x: 0, y: 0, z: 0}
-  timeToCompleteMovement: 5
+  penality: 10
 --- !u!65 &2362815396215326723
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -148,3 +148,17 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &4060222024717537756
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 611464631300861947}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26e4487f07ed61db18fe9d5905bac25d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Mover
+  endPosition: {x: 0, y: 0, z: 0}
+  timeToCompleteMovement: 5

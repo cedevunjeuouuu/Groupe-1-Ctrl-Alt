@@ -17,6 +17,5 @@ public class BasicTestController : MonoBehaviour, IPlayerController
     public void OnMove(InputValue pValue)
     {
         velocity = pValue.Get<Vector2>().x;
-        print(velocity);
     }
 }
