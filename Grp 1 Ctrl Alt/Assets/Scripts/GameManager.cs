@@ -26,5 +26,6 @@ public class GameManager : MonoBehaviour
     {
         EnergyRessourceReference.Add(energyRegeneration);
         BeerRessourceReference.Remove(1);
+        print("glouglouglou");
     }
 }
