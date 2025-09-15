@@ -272,6 +272,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Level
       objectReference: {fileID: 0}
+    - target: {fileID: 4963220689357677629, guid: d0aadff786485e549b1c704b4d28d7df, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7231277428805156851, guid: d0aadff786485e549b1c704b4d28d7df, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 8368775532113713571, guid: d0aadff786485e549b1c704b4d28d7df, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.4726372
@@ -460,7 +468,7 @@ GameObject:
   - component: {fileID: 1998057528}
   m_Layer: 0
   m_Name: Capsule
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -573,8 +581,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerController
   velocity: 0
   acceleration: 0
-  velocity_cap: 150
-  sensibility: 0.1
+  velocity_cap: 300
+  sensibility: 1
+  WallDetector: 20
 --- !u!114 &1998057529
 MonoBehaviour:
   m_ObjectHideFlags: 0

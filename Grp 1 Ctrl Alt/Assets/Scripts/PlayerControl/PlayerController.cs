@@ -35,8 +35,6 @@ public class PlayerController : MonoBehaviour
             velocity = 0;
         }
 
-
-
         transform.Translate(Vector3.right * velocity * Time.deltaTime);
     }
 
