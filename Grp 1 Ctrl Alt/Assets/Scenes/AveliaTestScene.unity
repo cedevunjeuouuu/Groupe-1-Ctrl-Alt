@@ -582,12 +582,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 2007390139}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: deb8a4dcaa98dafbe8be0a7a11311cb2, type: 3}
+  m_Script: {fileID: 11500000, guid: 4a5eb256571f84a84b450ed94e5efc87, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::TestControllerMouse2
+  m_EditorClassIdentifier: Assembly-CSharp::CursorLockedMouseController
   velocity: 0
   acceleration: 0
-  velocity_cap: 0.3
+  velocity_cap: 50
+  sensibility: 1500
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
