@@ -11,9 +11,16 @@ public class PlayerController : MonoBehaviour
     [SerializeField]
     private float sensibility;
 
+    private LayerMask maskwall;
+
+    [SerializeField]
+    private float WallDetector;
+
     void Awake()
     {
         Cursor.lockState = CursorLockMode.Locked;
+        maskwall = LayerMask.GetMask("Wall"); // need to find a better way to do this stuff this feels so bad
+
     }
 
 
@@ -21,17 +28,22 @@ public class PlayerController : MonoBehaviour
     {
         velocity += acceleration * Time.deltaTime;
         velocity = Mathf.Clamp(velocity, -velocity_cap, velocity_cap);
-        float position = velocity * Time.deltaTime;
 
 
-        print(Physics.Raycast(transform.position, Vector3.right * Mathf.Sign(velocity), Mathf.Abs(velocity)));
+        if (Physics.Raycast(transform.position, Vector3.right * Mathf.Sign(velocity), WallDetector, maskwall))
+        {
+            velocity = 0;
+        }
+
+
+
+        transform.Translate(Vector3.right * velocity * Time.deltaTime);
     }
 
     public void OnMouseDelta(InputValue pValue)
     {
         float value = pValue.Get<float>() / sensibility;
         acceleration = value;
-        print($"bwa {value}");
     }
 
 }
