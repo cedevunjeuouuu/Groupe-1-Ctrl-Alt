@@ -160,5 +160,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26e4487f07ed61db18fe9d5905bac25d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Mover
-  endPosition: {x: 0, y: 16.1, z: 0}
-  timeToCompleteMovement: 5
+  speed: 20
+  direction: {x: 0, y: 0, z: 1}

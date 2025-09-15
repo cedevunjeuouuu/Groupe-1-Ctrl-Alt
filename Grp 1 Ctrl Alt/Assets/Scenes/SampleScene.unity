@@ -2025,6 +2025,14 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1153204152574865945, guid: 24b521564f1af50b8b85bc6e1b839afc, type: 3}
+      propertyPath: speed
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1153204152574865945, guid: 24b521564f1af50b8b85bc6e1b839afc, type: 3}
+      propertyPath: direction.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1153204152574865945, guid: 24b521564f1af50b8b85bc6e1b839afc, type: 3}
       propertyPath: endPosition.x
       value: 123
       objectReference: {fileID: 0}

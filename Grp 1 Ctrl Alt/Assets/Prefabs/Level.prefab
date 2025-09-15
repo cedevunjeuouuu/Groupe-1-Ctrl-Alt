@@ -160,8 +160,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26e4487f07ed61db18fe9d5905bac25d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Mover
-  endPosition: {x: 3.51285, y: 0, z: -1000}
-  timeToCompleteMovement: 30
+  speed: 10
+  direction: {x: 0, y: 0, z: 1}
 --- !u!1 &3348274243574754142
 GameObject:
   m_ObjectHideFlags: 0
