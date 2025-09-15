@@ -1,20 +1,16 @@
 using UnityEngine;
-using DG.Tweening;
 
 public class Mover : MonoBehaviour
 {
     [SerializeField]
-    private Vector3 endPosition;
+    private float speed;
+
     [SerializeField]
-    private float timeToCompleteMovement = 5f;
+    private Vector3 direction;
 
-    private void Awake()
+    void Update()
     {
-        transform.DOMove(endPosition, timeToCompleteMovement).SetEase(Ease.Linear).onComplete = EndMove;
-    }
+        transform.position += direction * speed * Time.deltaTime;
 
-    void EndMove()
-    {
-        Destroy(gameObject);
     }
 }

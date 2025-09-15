@@ -1411,6 +1411,58 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 765402266}
   m_CullTransparentMesh: 1
+--- !u!1 &801736421
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 801736423}
+  - component: {fileID: 801736422}
+  m_Layer: 0
+  m_Name: LevelSpawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &801736422
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 801736421}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 336f51f1f7daf034db0119351a2b97dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::WorldGeneration
+  easyLevels:
+  - {fileID: 3300780397126159956, guid: d0aadff786485e549b1c704b4d28d7df, type: 3}
+  mediumLevels:
+  - {fileID: 3300780397126159956, guid: d0aadff786485e549b1c704b4d28d7df, type: 3}
+  hardLevels:
+  - {fileID: 3300780397126159956, guid: d0aadff786485e549b1c704b4d28d7df, type: 3}
+  numberOfMediumLevels: 10
+  levelLenght: 6.936
+--- !u!4 &801736423
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 801736421}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 3.51285, y: 0, z: 3286}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &823034354
 GameObject:
   m_ObjectHideFlags: 0
@@ -1973,6 +2025,14 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1153204152574865945, guid: 24b521564f1af50b8b85bc6e1b839afc, type: 3}
+      propertyPath: speed
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1153204152574865945, guid: 24b521564f1af50b8b85bc6e1b839afc, type: 3}
+      propertyPath: direction.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1153204152574865945, guid: 24b521564f1af50b8b85bc6e1b839afc, type: 3}
       propertyPath: endPosition.x
       value: 123
       objectReference: {fileID: 0}
@@ -2163,7 +2223,7 @@ Transform:
   m_GameObject: {fileID: 2059623833}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.31, y: 0, z: 5.05}
+  m_LocalPosition: {x: -0.31, y: 59, z: 2943}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2176,6 +2236,7 @@ SceneRoots:
   - {fileID: 410087041}
   - {fileID: 223669247}
   - {fileID: 832575519}
+  - {fileID: 801736423}
   - {fileID: 2059623835}
   - {fileID: 110349489}
   - {fileID: 563290069}
