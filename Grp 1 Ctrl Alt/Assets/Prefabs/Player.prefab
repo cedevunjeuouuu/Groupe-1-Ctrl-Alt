@@ -189,9 +189,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerController
   velocity: 0
   acceleration: 0
+  snap: 0
+  velocity_multiplier: 1
+  acceleration_multiplier: 1
+  snap_multiplier: 1
   velocity_cap: 100
+  acceleration_cap: 1000
+  snap_cap: 200
   sensibility: 1
   WallDetector: 1
+  controlScheme: 2
 --- !u!114 &703961906206228424
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -285,7 +292,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Stability
   player: {fileID: 0}
-  UnstablePosition: {x: 0, y: 0, z: 0.42261827, w: 0.90630776}
+  UnstableRotationPositive: {x: 0, y: 0, z: 0, w: 0}
+  UnstableRotationNegative: {x: 0, y: 0, z: 0, w: 0}
   sprite: {fileID: 1247472031471262866}
   unstability: 0
 --- !u!1 &8580731909797206241
