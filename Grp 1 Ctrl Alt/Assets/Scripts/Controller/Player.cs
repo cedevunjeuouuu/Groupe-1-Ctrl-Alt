@@ -1,17 +1,65 @@
-using System;
+﻿using System.Collections;
 using UnityEngine;
+using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
-    [SerializeField] private float centerSensibility = 0.1f;
-    [SerializeField] private float speedIntensity = 100f;
-    [SerializeField] private float fallIntensity = 100f;
+    [SerializeField] private float bump;
+    [SerializeField] private float bumpDuration = 0.3f;
+    [Range(0f, 3f)]
+    [SerializeField] private float alcoholLevel = 1f;
+    [SerializeField] private float maxMoveSpeed = 100f;
+    [Range(0f, 3f)]
+    [SerializeField] private float chaos = 1f;
+    [SerializeField] private float mouseSensibility = 10f;
+    [SerializeField] private float balanceForce = 60f;
+    [SerializeField] private float maxAngle = 45f;
     [SerializeField] private Rigidbody rb;
-    private float _center = 0f;
+    private float mouseX;
+    private float bumpTimer = 0f;
+    private float noiseOffset;
+    private float suddenTorqueTimer = 0f;
 
-    private void Update()
+    void Start()
     {
-        _center = rb.linearVelocity.x;
-        rb.AddForce(speedIntensity / _center, 0, 0);
+        rb.maxAngularVelocity = 30f;
+        noiseOffset = Random.Range(0f, 100f);
     }
+
+    public void OnMouseDelta(InputValue value)
+    {
+        mouseX = value.Get<float>() / mouseSensibility;
+    }
+
+    void FixedUpdate()
+    {
+        float noise = Mathf.PerlinNoise(Time.time * alcoholLevel * 5f + noiseOffset, 0f) * 2f - 1f;
+        suddenTorqueTimer -= Time.fixedDeltaTime;
+        float suddenTorque = 0f;
+        if (suddenTorqueTimer <= 0f)
+        {
+            suddenTorque = (Random.value * 2f - 1f) * Mathf.Pow(alcoholLevel, 1.5f) * 200f * chaos;
+            suddenTorqueTimer = Random.Range(0.02f, 0.15f / chaos);
+        }
+        float totalTorque = (noise * Mathf.Pow(alcoholLevel, 1.3f) * 100f * chaos) + suddenTorque;
+        rb.AddTorque(Vector3.forward * totalTorque, ForceMode.Acceleration);
+        rb.AddTorque(Vector3.forward * -mouseX * balanceForce, ForceMode.Acceleration);
+        float angle = transform.localEulerAngles.z;
+        if (angle > 180f) angle -= 360f;
+        if (Mathf.Abs(angle) > maxAngle)
+        {
+            
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            // mettre genre ecran de mort
+        }
+        float angleFraction = angle / maxAngle;
+        float targetSpeed = -Mathf.Pow(Mathf.Abs(angleFraction), 1.5f) * maxMoveSpeed * Mathf.Sign(angleFraction);
+
+        Vector3 move = new Vector3(targetSpeed * Time.fixedDeltaTime, 0f, 0f);
+        rb.MovePosition(rb.position + move);
+
+    }
+
+    
 }
