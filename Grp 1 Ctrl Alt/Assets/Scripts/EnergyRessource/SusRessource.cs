@@ -6,13 +6,19 @@ using UnityEngine.UI;
 public class SusRessource : MonoBehaviour
 {
     [SerializeField] private float startSus = 0f;
+    [SerializeField] private float looseSpeed = 1f;
     [SerializeField] private Slider sliderRef;
     private float _actualEnergyValue;
+
+    [SerializeField]
+    private bool autodefill = false;
 
     private void Start()
     {
         _actualEnergyValue = startSus;
         sliderRef.value = _actualEnergyValue;
+
+        if (autodefill) StartCoroutine(LooseUpdate());
     }
 
     public void Add(float value) // quand on boit une biere
@@ -24,6 +30,7 @@ public class SusRessource : MonoBehaviour
         {
             // do stuff
         }
+        _actualEnergyValue = MathF.Min(sliderRef.maxValue, _actualEnergyValue);
     }
 
     public void Remove(float value)
@@ -31,5 +38,14 @@ public class SusRessource : MonoBehaviour
         _actualEnergyValue -= value;
         _actualEnergyValue = Mathf.Max(_actualEnergyValue, 0f);
         sliderRef.value = _actualEnergyValue;
+    }
+
+    IEnumerator LooseUpdate()
+    {
+        while (true)
+        {
+            Remove(1f);
+            yield return new WaitForSeconds(1f / looseSpeed);
+        }
     }
 }

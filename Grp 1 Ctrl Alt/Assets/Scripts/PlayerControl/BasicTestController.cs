@@ -7,6 +7,8 @@ public class BasicTestController : MonoBehaviour, IPlayerController
     public float position { get; set; }
     public float stability { get; set; } = 1f;
 
+    public float velocitymultiplier;
+
     public void Update()
     {
         position += velocity * Time.deltaTime;
