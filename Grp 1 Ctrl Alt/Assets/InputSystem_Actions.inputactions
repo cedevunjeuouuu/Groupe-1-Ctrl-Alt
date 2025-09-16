@@ -513,17 +513,6 @@
                     "action": "MouseDelta",
                     "isComposite": false,
                     "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "1bb29810-e71c-4085-927f-63d7dff6c528",
-                    "path": "",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "MouseDelta",
-                    "isComposite": false,
-                    "isPartOfComposite": false
                 }
             ]
         },

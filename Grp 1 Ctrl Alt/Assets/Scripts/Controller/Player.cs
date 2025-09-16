@@ -5,8 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
-    [SerializeField] private float bump;
-    [SerializeField] private float bumpDuration = 0.3f;
+  
     [Range(0f, 3f)]
     [SerializeField] private float alcoholLevel = 1f;
     [SerializeField] private float maxMoveSpeed = 100f;
@@ -17,7 +16,7 @@ public class Player : MonoBehaviour
     [SerializeField] private float maxAngle = 45f;
     [SerializeField] private Rigidbody rb;
     private float mouseX;
-    private float bumpTimer = 0f;
+   
     private float noiseOffset;
     private float suddenTorqueTimer = 0f;
 
@@ -25,6 +24,8 @@ public class Player : MonoBehaviour
     {
         rb.maxAngularVelocity = 30f;
         noiseOffset = Random.Range(0f, 100f);
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
     }
 
     public void OnMouseDelta(InputValue value)
