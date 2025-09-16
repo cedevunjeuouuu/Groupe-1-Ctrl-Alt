@@ -341,6 +341,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 5474362350517083071, guid: 2c258e7b5f771b717bbb1dbb6f32ce17, type: 3}
+      propertyPath: UnstableRotationNegative.w
+      value: 0.90630776
+      objectReference: {fileID: 0}
+    - target: {fileID: 5474362350517083071, guid: 2c258e7b5f771b717bbb1dbb6f32ce17, type: 3}
+      propertyPath: UnstableRotationNegative.z
+      value: 0.42261827
+      objectReference: {fileID: 0}
+    - target: {fileID: 5474362350517083071, guid: 2c258e7b5f771b717bbb1dbb6f32ce17, type: 3}
+      propertyPath: UnstableRotationPositive.w
+      value: 0.90630776
+      objectReference: {fileID: 0}
+    - target: {fileID: 5474362350517083071, guid: 2c258e7b5f771b717bbb1dbb6f32ce17, type: 3}
+      propertyPath: UnstableRotationPositive.z
+      value: -0.42261827
+      objectReference: {fileID: 0}
     - target: {fileID: 6391941469523181910, guid: 2c258e7b5f771b717bbb1dbb6f32ce17, type: 3}
       propertyPath: m_LocalScale.x
       value: 20
@@ -359,7 +375,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6391941469523181910, guid: 2c258e7b5f771b717bbb1dbb6f32ce17, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 48.5
       objectReference: {fileID: 0}
     - target: {fileID: 6391941469523181910, guid: 2c258e7b5f771b717bbb1dbb6f32ce17, type: 3}
       propertyPath: m_LocalPosition.z
@@ -396,6 +412,10 @@ PrefabInstance:
     - target: {fileID: 6391941469523181910, guid: 2c258e7b5f771b717bbb1dbb6f32ce17, type: 3}
       propertyPath: m_ConstrainProportionsScale
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6548080179843555219, guid: 2c258e7b5f771b717bbb1dbb6f32ce17, type: 3}
+      propertyPath: controlScheme
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
