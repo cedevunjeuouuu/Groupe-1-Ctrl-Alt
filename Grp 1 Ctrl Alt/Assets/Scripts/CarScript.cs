@@ -13,7 +13,7 @@ public class CarScript : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             FindFirstObjectByType<SusRessource>()?.Add(penality);
-            other.GetComponent<PlayerController>().velocity += bump * Mathf.Sign(transform.position.x - other.transform.position.x);
+            other.GetComponent<PlayerController>().DoBump(bump * Mathf.Sign(transform.position.x - other.transform.position.x));
         }
     }
 

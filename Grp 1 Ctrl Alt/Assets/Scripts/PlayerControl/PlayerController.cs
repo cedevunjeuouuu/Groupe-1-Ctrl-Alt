@@ -15,6 +15,10 @@ public class PlayerController : MonoBehaviour
     public float acceleration_cap = 1000;
     public float snap_cap = 200;
 
+    public float bump;
+    public float bumpDuration = 0.3f;
+    private float bumpTimer = 0f;
+
     [SerializeField]
     private float sensibility;
 
@@ -45,8 +49,9 @@ public class PlayerController : MonoBehaviour
         snap = Mathf.Clamp(snap, -snap_cap, snap_cap);
         acceleration += snap * snap_multiplier;
         acceleration = Mathf.Clamp(acceleration, -acceleration_cap, acceleration_cap);
+
         velocity += acceleration * Time.deltaTime * acceleration_multiplier;
-        velocity = Mathf.Clamp(velocity, -velocity_cap, velocity_cap);
+        velocity = Mathf.Clamp(velocity, -velocity_cap, velocity_cap) + bump * Time.deltaTime;
 
 
         if (Physics.Raycast(transform.position, Vector3.right * Mathf.Sign(velocity), WallDetector, maskwall))
@@ -54,9 +59,30 @@ public class PlayerController : MonoBehaviour
             velocity = 0;
             acceleration = 0;
             snap = 0;
+            return;
         }
 
         transform.Translate(Vector3.right * velocity * velocity_multiplier * Time.deltaTime);
+
+        DoBumpProgress();
+    }
+
+    private void DoBumpProgress()
+    {
+        if (bumpTimer < 0) return;
+
+
+        float speed = bump / bumpDuration;
+
+        transform.Translate(Vector3.right * speed * Time.deltaTime);
+
+        bumpTimer -= Time.deltaTime;
+    }
+
+    public void DoBump(float pBumps)
+    {
+        bumpTimer = bumpDuration;
+        bump = pBumps;
     }
 
     public void OnMouseDelta(InputValue pValue)
