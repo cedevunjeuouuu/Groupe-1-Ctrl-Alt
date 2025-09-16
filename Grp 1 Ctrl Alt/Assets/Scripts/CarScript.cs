@@ -15,7 +15,8 @@ public class CarScript : MonoBehaviour
             FindFirstObjectByType<SusRessource>()?.Add(penality);
             other.GetComponent<PlayerController>().DoBump(bump * Mathf.Sign(transform.position.x - other.transform.position.x));
         }
-    }
+    }   
+    
 
     // rajouter des fonctions genre appel de phare et tout pour immersion qui sont appelés quand on se rapproche du player
 }
