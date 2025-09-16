@@ -581,9 +581,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerController
   velocity: 0
   acceleration: 0
+  snap: 0
+  velocity_multiplier: 1
+  acceleration_multiplier: 1
+  snap_multiplier: 1
   velocity_cap: 1e+11
-  sensibility: 1
+  sensibility: 500
   WallDetector: 20
+  controlScheme: 2
 --- !u!114 &1998057529
 MonoBehaviour:
   m_ObjectHideFlags: 0
