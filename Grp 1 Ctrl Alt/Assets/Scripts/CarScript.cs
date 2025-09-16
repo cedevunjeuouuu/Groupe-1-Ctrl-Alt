@@ -4,11 +4,16 @@ public class CarScript : MonoBehaviour
 {
     [SerializeField]
     private float penality = 10f;
+
+    [SerializeField]
+    private float bump = 10f;
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
         {
-            FindFirstObjectByType<SusRessource>().Add(penality);
+            FindFirstObjectByType<SusRessource>()?.Add(penality);
+            other.GetComponent<PlayerController>().DoBump(bump * Mathf.Sign(transform.position.x - other.transform.position.x));
         }
     }
 
