@@ -14,6 +14,7 @@ public class Player : MonoBehaviour
     [SerializeField] private float mouseSensibility = 10f;
     [SerializeField] private float balanceForce = 60f;
     [SerializeField] private float maxAngle = 45f;
+    [SerializeField] private float maxAngleBeforeDeath = 45f;
     [SerializeField] private Rigidbody rb;
     private float mouseX;
    
@@ -48,7 +49,7 @@ public class Player : MonoBehaviour
         rb.AddTorque(Vector3.forward * -mouseX * balanceForce, ForceMode.Acceleration);
         float angle = transform.localEulerAngles.z;
         if (angle > 180f) angle -= 360f;
-        if (Mathf.Abs(angle) > maxAngle)
+        if (Mathf.Abs(angle) > maxAngleBeforeDeath)
         {
             
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
