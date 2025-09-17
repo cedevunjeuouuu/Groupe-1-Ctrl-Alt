@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 2452357183566824817}
   - component: {fileID: 5617830352956870735}
   - component: {fileID: -3303370343972525228}
+  - component: {fileID: 5590498909476678136}
   m_Layer: 0
   m_Name: Fou
   m_TagString: Untagged
@@ -109,6 +110,20 @@ MeshCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 5
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &5590498909476678136
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8979953276876829415}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26e451259b686034ba2982eb5f8c19d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Bump
+  bumpForce: 500
+  bumpDuration: 0.1

@@ -127,6 +127,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1141780599297784678, guid: 56d2a7db2d84e2f41823fe6f561e6745, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 26.53
+      objectReference: {fileID: 0}
+    - target: {fileID: 1141780599297784678, guid: 56d2a7db2d84e2f41823fe6f561e6745, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 5.14
+      objectReference: {fileID: 0}
     - target: {fileID: 2068361238890130300, guid: 56d2a7db2d84e2f41823fe6f561e6745, type: 3}
       propertyPath: m_LocalPosition.x
       value: 4
@@ -170,6 +178,14 @@ PrefabInstance:
     - target: {fileID: 4399150675028675903, guid: 56d2a7db2d84e2f41823fe6f561e6745, type: 3}
       propertyPath: m_Name
       value: Proto LD-1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4522547018979795275, guid: 56d2a7db2d84e2f41823fe6f561e6745, type: 3}
+      propertyPath: m_Range
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 4522547018979795275, guid: 56d2a7db2d84e2f41823fe6f561e6745, type: 3}
+      propertyPath: m_Intensity
+      value: 5000
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -833,7 +849,7 @@ Transform:
   m_GameObject: {fileID: 491724541}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.3, y: -15, z: 3}
+  m_LocalPosition: {x: -0.3, y: 34.3, z: 3}
   m_LocalScale: {x: 20, y: 20, z: 20}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -966,8 +982,8 @@ MonoBehaviour:
   maxAngle: 45
   rb: {fileID: 491724546}
   bumpForce: 50
-  xMinPos: 0
-  xMaxPos: 0
+  xMinPos: -150
+  xMaxPos: 165
 --- !u!114 &491724549
 MonoBehaviour:
   m_ObjectHideFlags: 0
