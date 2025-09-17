@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 719173195559001885}
   - component: {fileID: 4491460620696801464}
   - component: {fileID: 1851024435177923698}
-  - component: {fileID: 3196373973900290572}
+  - component: {fileID: -7907311763233156554}
   m_Layer: 0
   m_Name: Batiment1_toit
   m_TagString: Untagged
@@ -90,7 +90,7 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &3196373973900290572
+--- !u!64 &-7907311763233156554
 MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -109,6 +109,6 @@ MeshCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 5
-  m_Convex: 1
+  m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -7387706064836869012, guid: 7d3ccf448d56a294596db6d81608ac8d, type: 3}
