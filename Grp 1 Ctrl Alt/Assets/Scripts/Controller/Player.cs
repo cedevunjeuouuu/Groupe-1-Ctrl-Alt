@@ -1,7 +1,9 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
+using Random = UnityEngine.Random;
 
 public class Player : MonoBehaviour
 {
@@ -14,12 +16,15 @@ public class Player : MonoBehaviour
     [SerializeField] private float mouseSensibility = 10f;
     [SerializeField] private float balanceForce = 60f;
     [SerializeField] private float maxAngle = 45f;
-    [SerializeField] private float maxAngleBeforeDeath = 45f;
     [SerializeField] private Rigidbody rb;
+    [SerializeField] private float bumpForce = 50f;
+    [SerializeField] private float xMinPos;
+    [SerializeField] private float xMaxPos;
     private float mouseX;
    
     private float noiseOffset;
     private float suddenTorqueTimer = 0f;
+    private float targetSpeed;
 
     void Start()
     {
@@ -48,20 +53,15 @@ public class Player : MonoBehaviour
         rb.AddTorque(Vector3.forward * totalTorque, ForceMode.Acceleration);
         rb.AddTorque(Vector3.forward * -mouseX * balanceForce, ForceMode.Acceleration);
         float angle = transform.localEulerAngles.z;
-        if (angle > 180f) angle -= 360f;
-        if (Mathf.Abs(angle) > maxAngleBeforeDeath)
+        if (angle > 180f)
         {
-            
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-            // mettre genre ecran de mort
+            angle -= 360f;
         }
         float angleFraction = angle / maxAngle;
-        float targetSpeed = -Mathf.Pow(Mathf.Abs(angleFraction), 1.5f) * maxMoveSpeed * Mathf.Sign(angleFraction);
+        targetSpeed = -Mathf.Pow(Mathf.Abs(angleFraction), 1.5f) * maxMoveSpeed * Mathf.Sign(angleFraction);
 
         Vector3 move = new Vector3(targetSpeed * Time.fixedDeltaTime, 0f, 0f);
         rb.MovePosition(rb.position + move);
 
     }
-
-    
 }
