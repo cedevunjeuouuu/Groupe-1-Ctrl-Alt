@@ -85,7 +85,7 @@ Material:
     - _AddPrecomputedVelocity: 0
     - _AlphaClip: 1
     - _AlphaToMask: 1
-    - _BendingAmount: 0.005
+    - _BendingAmount: 0.00005
     - _Blend: 0
     - _BlendModePreserveSpecular: 1
     - _BumpScale: 1
