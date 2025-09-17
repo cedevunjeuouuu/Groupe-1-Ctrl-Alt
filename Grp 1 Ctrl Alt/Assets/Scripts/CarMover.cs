@@ -5,12 +5,15 @@ using System;
 public class CarMover : MonoBehaviour
 {
     [SerializeField]
-    private float speed;
+    private float speed = 1f;
 
     [SerializeReference]
     private Transform sprite;
 
     private Transform player;
+
+    [SerializeField]
+    private float offset = 0f;
 
     public void Awake()
     {
@@ -21,6 +24,6 @@ public class CarMover : MonoBehaviour
     {
         var pos = sprite.position;
 
-        sprite.position = new Vector3(pos.x, pos.y, speed * transform.position.z);
+        sprite.position = new Vector3(pos.x, pos.y, speed * transform.position.z + offset);
     }
 }
