@@ -54,6 +54,6 @@ MonoBehaviour:
   allGroundFloor:
   - {fileID: 5808319245803488985, guid: 9fd31b7a4028aac459b6d8963cf59857, type: 3}
   - {fileID: 9085436950960306972, guid: cce93bc04bd6fbb48bcad7e22afb7c75, type: 3}
-  floorHeight: 100
+  floorHeight: 110
   minFloorNumber: 0
   maxFloorNumber: 2

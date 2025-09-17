@@ -63,7 +63,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: 4291f92cda323a24faeef3240ff31e40, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 95d9677bccd0b10428649477a1ea7a6a, type: 2}
+      objectReference: {fileID: 2100000, guid: e03af38cd2378a64182dde3264974dfd, type: 2}
     - target: {fileID: 919132149155446097, guid: 4291f92cda323a24faeef3240ff31e40, type: 3}
       propertyPath: m_Name
       value: paneau publicitaire
