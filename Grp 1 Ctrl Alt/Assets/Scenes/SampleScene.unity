@@ -133,7 +133,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1141780599297784678, guid: 56d2a7db2d84e2f41823fe6f561e6745, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 5.14
+      value: -0.01
       objectReference: {fileID: 0}
     - target: {fileID: 2068361238890130300, guid: 56d2a7db2d84e2f41823fe6f561e6745, type: 3}
       propertyPath: m_LocalPosition.x
@@ -485,7 +485,7 @@ MonoBehaviour:
   PPRessourceReference: {fileID: 223669254}
   SusRessourceReference: {fileID: 223669248}
   camera: {fileID: 330585548}
-  canPee: 0
+  canPee: 1
   maxSpeed: 1.5
   timeAcceleration: 0.03
   textCivil: {fileID: 697359746}
