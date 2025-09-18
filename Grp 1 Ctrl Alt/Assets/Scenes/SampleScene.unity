@@ -486,8 +486,8 @@ MonoBehaviour:
   SusRessourceReference: {fileID: 223669248}
   camera: {fileID: 330585548}
   canPee: 1
-  maxSpeed: 1.5
-  timeAcceleration: 1
+  maxSpeed: 15
+  timeAcceleration: 0.125
   textCivil: {fileID: 697359746}
   textFou: {fileID: 1981209494}
   imageFade: {fileID: 351620156}
