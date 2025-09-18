@@ -120,7 +120,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26e451259b686034ba2982eb5f8c19d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Bump
-  bumpForce: 800
+  bumpForce: 200
   bumpDuration: 0.1
 --- !u!114 &2781968544570366282
 MonoBehaviour:
@@ -136,3 +136,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::CarScript
   penality: 15
   bump: 0
+  wantToDestroy: 0

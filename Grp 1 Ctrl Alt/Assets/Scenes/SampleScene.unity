@@ -6013,9 +6013,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 31a0e5cd5e2e9794bacf3a83d2d013eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DrunkBalance
-  alcoholLevel: 0.58
+  alcoholLevel: 1.5
   maxMoveSpeed: 200
-  chaos: 1
+  chaos: 1.25
   mouseSensibility: 10
   balanceForce: 50
   maxAngle: 45
@@ -6618,12 +6618,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WorldGeneration
   levels:
-  - {fileID: 4399150675028675903, guid: 56d2a7db2d84e2f41823fe6f561e6745, type: 3}
-  - {fileID: 6203460585690437808, guid: 5ac88967ee7c5a349831c222a2e6aeea, type: 3}
-  - {fileID: 5239179813663927265, guid: ddd7d4e5ac6ae4349a233eedc1afcda6, type: 3}
   - {fileID: 6825572168749126264, guid: 5a645ec8ad438ca46a4ded8be4feb40e, type: 3}
   - {fileID: 7177394183177655726, guid: 444c76266eec644479bc965c4bc7a81b, type: 3}
   - {fileID: 2336159256110446426, guid: 91fdfc4f4227b414c82973b2e55b0e4b, type: 3}
+  - {fileID: 4399150675028675903, guid: 56d2a7db2d84e2f41823fe6f561e6745, type: 3}
+  - {fileID: 6203460585690437808, guid: 5ac88967ee7c5a349831c222a2e6aeea, type: 3}
+  - {fileID: 5239179813663927265, guid: ddd7d4e5ac6ae4349a233eedc1afcda6, type: 3}
   levelLenght: 21.7
 --- !u!4 &801736423
 Transform:
