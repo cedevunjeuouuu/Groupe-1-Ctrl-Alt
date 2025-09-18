@@ -1,0 +1,13 @@
+{
+    "asset": "cc7f56065ccb89b47b3d09df48c44a16",
+    "fileName": "01995a01-210c-7b7c-8e64-ac9a49251fbb.wav",
+    "prompt": "i want pschit like the sound when we open a beer",
+    "negativePrompt": "",
+    "model": "0ee39b33-2893-4e0f-8c46-0e0bdd4eda85",
+    "modelName": "Text to Sound",
+    "customSeed": -1,
+    "w3CTraceId": "40f3a6abc4bf722f7401959aa1ac408f",
+    "duration": 1.0,
+    "autoTrim": true,
+    "hasReference": false
+}

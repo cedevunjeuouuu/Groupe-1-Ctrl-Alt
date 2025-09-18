@@ -66,6 +66,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 707881d5fe4090e47b0281739aab689d, type: 3}
       insertIndex: -1
       addedObject: {fileID: 9029611649439708267}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 707881d5fe4090e47b0281739aab689d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4383741741697388115}
   m_SourcePrefab: {fileID: 100100000, guid: 707881d5fe4090e47b0281739aab689d, type: 3}
 --- !u!1 &8315373587284889126 stripped
 GameObject:
@@ -107,3 +110,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Bump
   bumpForce: 800
   bumpDuration: 0.1
+--- !u!114 &4383741741697388115
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8315373587284889126}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67e5174f6fdc32a4bb085bcb3088ce77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CarScript
+  penality: 15
+  bump: 0

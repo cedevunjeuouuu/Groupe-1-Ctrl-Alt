@@ -212,6 +212,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: f12ec6eecb9f5d243a18ea7c97531937, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1110254487713879953}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: f12ec6eecb9f5d243a18ea7c97531937, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1903283902357533460}
   m_SourcePrefab: {fileID: 100100000, guid: f12ec6eecb9f5d243a18ea7c97531937, type: 3}
 --- !u!1 &327228877820212691 stripped
 GameObject:
@@ -254,6 +257,20 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 4711208715938537054, guid: f12ec6eecb9f5d243a18ea7c97531937, type: 3}
+--- !u!114 &1903283902357533460
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 327228877820212691}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67e5174f6fdc32a4bb085bcb3088ce77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CarScript
+  penality: 15
+  bump: 0
 --- !u!4 &1135290022363754345 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: f12ec6eecb9f5d243a18ea7c97531937, type: 3}

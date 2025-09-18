@@ -16,10 +16,12 @@ public class Player : MonoBehaviour
     [SerializeField] private float mouseSensibility = 10f;
     [SerializeField] private float balanceForce = 60f;
     [SerializeField] private float maxAngle = 45f;
+    [SerializeField] private float maxMoveAngle = 45f;
     [SerializeField] private Rigidbody rb;
     [SerializeField] private float bumpForce = 50f;
     [SerializeField] private float xMinPos = -100f;
     [SerializeField] private float xMaxPos = 100f;
+    
     private float mouseX;
    
     private float noiseOffset;
@@ -69,5 +71,10 @@ public class Player : MonoBehaviour
     private void Update()
     {
         transform.position = new Vector3(Mathf.Clamp(transform.position.x, xMinPos, xMaxPos), transform.position.y, transform.position.z);
+        Vector3 euler = transform.localEulerAngles;
+        if (euler.z > 180f)
+            euler.z -= 360f;
+        euler.z = Mathf.Clamp(euler.z, -maxMoveAngle, maxMoveAngle);
+        transform.localEulerAngles = euler;
     }
 }

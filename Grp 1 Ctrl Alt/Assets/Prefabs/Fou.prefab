@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 5617830352956870735}
   - component: {fileID: -3303370343972525228}
   - component: {fileID: 5590498909476678136}
+  - component: {fileID: 7604053788966922097}
   m_Layer: 0
   m_Name: Fou
   m_TagString: Untagged
@@ -106,7 +107,7 @@ MeshCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 5
@@ -127,3 +128,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Bump
   bumpForce: 500
   bumpDuration: 0.1
+--- !u!114 &7604053788966922097
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8979953276876829415}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8f600eafc81858408200985889cd5b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::NpcScript
+  penality: 0
+  energyPenality: 15
+  isCivil: 0

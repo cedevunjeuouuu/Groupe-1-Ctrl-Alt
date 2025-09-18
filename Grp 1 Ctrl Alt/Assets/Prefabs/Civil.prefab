@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: -5322433574130163624}
   - component: {fileID: 8534696619083770008}
   - component: {fileID: 9072538785380562162}
+  - component: {fileID: 4169792956054186029}
   m_Layer: 0
   m_Name: Civil
   m_TagString: Untagged
@@ -107,7 +108,7 @@ MeshCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 5
@@ -128,6 +129,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::CarScript
   penality: 10
   bump: 0
+  wantToDestroy: 0
 --- !u!114 &9072538785380562162
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -142,3 +144,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Bump
   bumpForce: 500
   bumpDuration: 0.1
+--- !u!114 &4169792956054186029
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1408186431608292224}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8f600eafc81858408200985889cd5b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::NpcScript
+  penality: 10
+  energyPenality: 0
+  isCivil: 1

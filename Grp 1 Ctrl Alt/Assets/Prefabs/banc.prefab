@@ -78,6 +78,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 45b526e4c077b074a928913db64a8ee5, type: 3}
       insertIndex: -1
       addedObject: {fileID: 4186717864666484107}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 45b526e4c077b074a928913db64a8ee5, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: -3743670879289117414}
   m_SourcePrefab: {fileID: 100100000, guid: 45b526e4c077b074a928913db64a8ee5, type: 3}
 --- !u!1 &5499534749801808566 stripped
 GameObject:
@@ -119,3 +122,17 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.039422993, y: 0.017592466, z: 0.019951927}
   m_Center: {x: 0.000000010244547, y: -0.0002497822, z: 0.0099298665}
+--- !u!114 &-3743670879289117414
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5499534749801808566}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67e5174f6fdc32a4bb085bcb3088ce77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CarScript
+  penality: 15
+  bump: 0

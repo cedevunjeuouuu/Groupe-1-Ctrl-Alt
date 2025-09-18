@@ -25,7 +25,7 @@ public class CarGenerator : MonoBehaviour
                     Instantiate(allCars[Random.Range(0, allCars.Length)], transform);
                 }
             }
-            yield return new WaitForSeconds(1f / spawnSpeed);
+            yield return new WaitForSecondsRealtime(1f / spawnSpeed);
         }
     }
 }

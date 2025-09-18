@@ -70,6 +70,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::CarScript
   penality: 25
   bump: 10
+  wantToDestroy: 1
 --- !u!114 &5636224987938166012
 MonoBehaviour:
   m_ObjectHideFlags: 0

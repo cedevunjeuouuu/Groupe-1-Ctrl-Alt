@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using Unity.AppUI.Core;
 using UnityEngine;
 
 public class Bump : MonoBehaviour
@@ -10,6 +11,7 @@ public class Bump : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
+            GameManager.INSTANCE.camera.Shake();
             if (other.transform.position.x < transform.position.x)
             {
                 BumpLeft(other.GetComponent<Rigidbody>());
@@ -34,7 +36,7 @@ public class Bump : MonoBehaviour
 
     IEnumerator StopBump(Rigidbody rb)
     {
-        yield return new WaitForSeconds(bumpDuration);
+        yield return new WaitForSecondsRealtime(bumpDuration);
         rb.linearVelocity = new Vector3(0, 0, 0);
     }
 }

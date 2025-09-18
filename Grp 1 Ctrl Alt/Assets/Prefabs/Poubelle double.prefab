@@ -138,6 +138,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 2fe0dbacc7d1afe45944daf95f0208f2, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1272804470621188652}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 2fe0dbacc7d1afe45944daf95f0208f2, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6555764035208421269}
   m_SourcePrefab: {fileID: 100100000, guid: 2fe0dbacc7d1afe45944daf95f0208f2, type: 3}
 --- !u!1 &1627470766458938289 stripped
 GameObject:
@@ -179,6 +182,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Bump
   bumpForce: 800
   bumpDuration: 0.1
+--- !u!114 &6555764035208421269
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1627470766458938289}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67e5174f6fdc32a4bb085bcb3088ce77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CarScript
+  penality: 15
+  bump: 0
 --- !u!4 &2152193571676911883 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 2fe0dbacc7d1afe45944daf95f0208f2, type: 3}

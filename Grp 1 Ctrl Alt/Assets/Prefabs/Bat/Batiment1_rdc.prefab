@@ -11,7 +11,9 @@ GameObject:
   - component: {fileID: 6615958517807242339}
   - component: {fileID: 7818038591263724486}
   - component: {fileID: 5448150367244199692}
-  - component: {fileID: 4147664343625697356}
+  - component: {fileID: 5060094596652389783}
+  - component: {fileID: 4156731446631804883}
+  - component: {fileID: 5946747524426936827}
   m_Layer: 0
   m_Name: Batiment1_rdc
   m_TagString: Wall
@@ -90,8 +92,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &4147664343625697356
-MeshCollider:
+--- !u!65 &5060094596652389783
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -108,7 +110,34 @@ MeshCollider:
   m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 8552134717624371188, guid: ede5bc42bb7cbc244a370f22c730085f, type: 3}
+  serializedVersion: 3
+  m_Size: {x: 0.028568601, y: 0.014010423, z: 0.01943328}
+  m_Center: {x: -0.029630465, y: 0.02238735, z: -0.0024469}
+--- !u!114 &4156731446631804883
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5808319245803488985}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26e451259b686034ba2982eb5f8c19d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Bump
+  bumpForce: 1000
+  bumpDuration: 0.1
+--- !u!114 &5946747524426936827
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5808319245803488985}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67e5174f6fdc32a4bb085bcb3088ce77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CarScript
+  penality: 15
+  bump: 0
