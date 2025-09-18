@@ -77,17 +77,6 @@
                 },
                 {
                     "name": "",
-                    "id": "1bb29810-e71c-4085-927f-63d7dff6c528",
-                    "path": "",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "MouseDelta",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
                     "id": "eed0066b-da1c-4676-833e-99aa88285098",
                     "path": "<Keyboard>/anyKey",
                     "interactions": "",
