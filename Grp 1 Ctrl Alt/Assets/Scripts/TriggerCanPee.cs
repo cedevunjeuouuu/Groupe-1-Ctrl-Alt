@@ -6,14 +6,14 @@ public class TriggerCanPee : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            GameManager.INSTANCE.canPee = true;
+            GameManager.INSTANCE.canPee = false;
         }
     }
     void OnTriggerExit(Collider other)
     {
         if (other.CompareTag("Player"))
         {
-            GameManager.INSTANCE.canPee = false;
+            GameManager.INSTANCE.canPee = true;
         }
     }
 }
