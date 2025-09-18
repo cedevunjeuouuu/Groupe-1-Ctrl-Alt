@@ -80,6 +80,8 @@ public class GameManager : MonoBehaviour
 
     public void Loose(bool isPolice)
     {
+        StopCoroutine(Score());
+        camera.canShake = false;
         if (isPolice)
         {
             lightPolice.gameObject.SetActive(true);
