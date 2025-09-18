@@ -23,8 +23,8 @@ public class RandomHouse : MonoBehaviour
         if (allGroundFloor.Length != 0 && allFloors.Length != 0 && allRoofs.Length != 0)
         {
             float actualHeight = floorHeight;
-            GameObject gF = Instantiate(allGroundFloor[Random.Range(0, allGroundFloor.Length)], transform);
-            gF.transform.localScale *= multiplicateur;
+            //GameObject gF = Instantiate(allGroundFloor[Random.Range(0, allGroundFloor.Length)], transform);
+            //gF.transform.localScale *= multiplicateur;
             int randomNb = Random.Range(minFloorNumber, maxFloorNumber + 1);
             for (int i = 0; i < randomNb; i++)
             {
