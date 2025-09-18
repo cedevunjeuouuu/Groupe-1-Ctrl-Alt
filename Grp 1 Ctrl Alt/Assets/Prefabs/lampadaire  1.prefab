@@ -26,13 +26,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2757524555861617557}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.07394683, y: -0.3211059, z: 0.9269481, w: 0.17941637}
-  m_LocalPosition: {x: -0.00034957842, y: -0.0016805524, z: 0.0027952963}
+  m_LocalRotation: {x: -0.01735313, y: -0.5094844, z: 0.85993636, w: 0.02517999}
+  m_LocalPosition: {x: -0.00009999383, y: 0.0014999881, z: 0.0016000026}
   m_LocalScale: {x: 0.93486124, y: 1.0504299, z: 1.0000687}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1135290022363754345}
-  m_LocalEulerAnglesHint: {x: 38.45, y: 361.6, z: -201.351}
+  m_LocalEulerAnglesHint: {x: 61.089, y: 353.408, z: -187.247}
 --- !u!108 &1867421055201737189
 Light:
   m_ObjectHideFlags: 0
@@ -44,10 +44,10 @@ Light:
   serializedVersion: 11
   m_Type: 0
   m_Color: {r: 1, g: 0.9533146, b: 0.7122642, a: 1}
-  m_Intensity: 26919.4
-  m_Range: 223
-  m_SpotAngle: 143.74246
-  m_InnerSpotAngle: 86.72633
+  m_Intensity: 45000
+  m_Range: 550
+  m_SpotAngle: 109.996506
+  m_InnerSpotAngle: 52.98043
   m_CookieSize: 10
   m_Shadows:
     m_Type: 0
@@ -86,7 +86,7 @@ Light:
   m_Lightmapping: 4
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
-  m_BounceIntensity: 19545
+  m_BounceIntensity: 20000
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
   m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
@@ -271,6 +271,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::CarScript
   penality: 15
   bump: 0
+  wantToDestroy: 0
 --- !u!4 &1135290022363754345 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: f12ec6eecb9f5d243a18ea7c97531937, type: 3}
