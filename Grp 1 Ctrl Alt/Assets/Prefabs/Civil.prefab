@@ -127,7 +127,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67e5174f6fdc32a4bb085bcb3088ce77, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CarScript
-  penality: 10
+  penality: 0
   bump: 0
   wantToDestroy: 0
 --- !u!114 &9072538785380562162
@@ -142,7 +142,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26e451259b686034ba2982eb5f8c19d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Bump
-  bumpForce: 300
+  bumpForce: 100
   bumpDuration: 0.1
 --- !u!114 &4169792956054186029
 MonoBehaviour:
@@ -156,6 +156,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b8f600eafc81858408200985889cd5b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NpcScript
-  penality: 10
+  penality: 15
   energyPenality: 0
   isCivil: 1

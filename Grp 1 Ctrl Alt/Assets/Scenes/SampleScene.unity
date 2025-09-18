@@ -6014,10 +6014,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DrunkBalance
   alcoholLevel: 1.5
-  maxMoveSpeed: 200
+  maxMoveSpeed: 150
   chaos: 1.25
   mouseSensibility: 10
-  balanceForce: 50
+  balanceForce: 45
   maxAngle: 45
   maxMoveAngle: 40
   rb: {fileID: 491724546}
