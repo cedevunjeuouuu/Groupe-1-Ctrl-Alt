@@ -487,7 +487,7 @@ MonoBehaviour:
   camera: {fileID: 330585548}
   canPee: 1
   maxSpeed: 15
-  timeAcceleration: 0.25
+  timeAcceleration: 0.05
   textCivil: {fileID: 697359746}
   textFou: {fileID: 1981209494}
   imageFade: {fileID: 351620156}
@@ -6017,7 +6017,7 @@ MonoBehaviour:
   maxMoveSpeed: 150
   chaos: 1.25
   mouseSensibility: 10
-  balanceForce: 45
+  balanceForce: 50
   maxAngle: 45
   maxMoveAngle: 40
   rb: {fileID: 491724546}
