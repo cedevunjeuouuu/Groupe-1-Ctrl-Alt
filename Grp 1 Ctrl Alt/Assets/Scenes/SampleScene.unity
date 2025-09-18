@@ -450,7 +450,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnergyRessource
   startEnergy: 100
-  looseSpeed: 2
+  looseSpeed: 1
   sliderRef: {fileID: 982159740}
   autodefill: 1
 --- !u!114 &223669245
@@ -486,8 +486,8 @@ MonoBehaviour:
   SusRessourceReference: {fileID: 223669248}
   camera: {fileID: 330585548}
   canPee: 1
-  maxSpeed: 15
-  timeAcceleration: 0.125
+  maxSpeed: 1.5
+  timeAcceleration: 0.03
   textCivil: {fileID: 697359746}
   textFou: {fileID: 1981209494}
   imageFade: {fileID: 351620156}
@@ -526,9 +526,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SusRessource
   startSus: 0
-  looseSpeed: 2
+  looseSpeed: 1
   sliderRef: {fileID: 1320106292}
-  autodefill: 1
+  autodefill: 0
 --- !u!114 &223669252
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -586,7 +586,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PPRessource
   startEnergy: 0
-  looseSpeed: 3
+  looseSpeed: 1
   sliderRef: {fileID: 1409985409}
   ppParticle: {fileID: 272889736}
   autodefill: 1
@@ -8125,63 +8125,6 @@ Light:
   m_LightUnit: 1
   m_LuxAtDistance: 1
   m_EnableSpotReflector: 1
---- !u!1001 &3940488552241847077
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 1236618718426360140, guid: 2f8a3666ffda618449855a0b683bc642, type: 3}
-      propertyPath: m_Name
-      value: Batiment1_rdc_sansEscalier
-      objectReference: {fileID: 0}
-    - target: {fileID: 1901234278031078390, guid: 2f8a3666ffda618449855a0b683bc642, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 875.0824
-      objectReference: {fileID: 0}
-    - target: {fileID: 1901234278031078390, guid: 2f8a3666ffda618449855a0b683bc642, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -1609.5919
-      objectReference: {fileID: 0}
-    - target: {fileID: 1901234278031078390, guid: 2f8a3666ffda618449855a0b683bc642, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 1329.3995
-      objectReference: {fileID: 0}
-    - target: {fileID: 1901234278031078390, guid: 2f8a3666ffda618449855a0b683bc642, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.7071067
-      objectReference: {fileID: 0}
-    - target: {fileID: 1901234278031078390, guid: 2f8a3666ffda618449855a0b683bc642, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0.7071069
-      objectReference: {fileID: 0}
-    - target: {fileID: 1901234278031078390, guid: 2f8a3666ffda618449855a0b683bc642, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1901234278031078390, guid: 2f8a3666ffda618449855a0b683bc642, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1901234278031078390, guid: 2f8a3666ffda618449855a0b683bc642, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1901234278031078390, guid: 2f8a3666ffda618449855a0b683bc642, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1901234278031078390, guid: 2f8a3666ffda618449855a0b683bc642, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 2f8a3666ffda618449855a0b683bc642, type: 3}
 --- !u!1001 &6693143804736634985
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8255,4 +8198,3 @@ SceneRoots:
   - {fileID: 1795636234}
   - {fileID: 1822719655}
   - {fileID: 870272037}
-  - {fileID: 3940488552241847077}
