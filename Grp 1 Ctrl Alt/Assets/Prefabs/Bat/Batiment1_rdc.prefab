@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 5946747524426936827}
   m_Layer: 0
   m_Name: Batiment1_rdc
-  m_TagString: Wall
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -141,3 +141,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::CarScript
   penality: 15
   bump: 0
+  wantToDestroy: 0
