@@ -450,7 +450,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnergyRessource
   startEnergy: 100
-  looseSpeed: 1
+  looseSpeed: 2
   sliderRef: {fileID: 982159740}
   autodefill: 1
 --- !u!114 &223669245
@@ -486,8 +486,8 @@ MonoBehaviour:
   SusRessourceReference: {fileID: 223669248}
   camera: {fileID: 330585548}
   canPee: 1
-  maxSpeed: 1.5
-  timeAcceleration: 0.03
+  maxSpeed: 15
+  timeAcceleration: 0.25
   textCivil: {fileID: 697359746}
   textFou: {fileID: 1981209494}
   imageFade: {fileID: 351620156}
@@ -526,9 +526,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SusRessource
   startSus: 0
-  looseSpeed: 1
+  looseSpeed: 3
   sliderRef: {fileID: 1320106292}
-  autodefill: 0
+  autodefill: 1
 --- !u!114 &223669252
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -586,7 +586,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PPRessource
   startEnergy: 0
-  looseSpeed: 1
+  looseSpeed: 3
   sliderRef: {fileID: 1409985409}
   ppParticle: {fileID: 272889736}
   autodefill: 1
