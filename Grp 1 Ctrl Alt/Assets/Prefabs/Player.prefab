@@ -196,6 +196,8 @@ MonoBehaviour:
   velocity_cap: 100
   acceleration_cap: 1000
   snap_cap: 200
+  bump: 0
+  bumpDuration: 0.3
   sensibility: 1
   WallDetector: 1
   controlScheme: 2
@@ -248,7 +250,7 @@ CapsuleCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 1
+  m_Radius: 0.5
   m_Height: 3
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
