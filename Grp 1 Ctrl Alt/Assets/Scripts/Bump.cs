@@ -7,6 +7,7 @@ public class Bump : MonoBehaviour
 {
     [SerializeField] private float bumpForce = 800f;
     [SerializeField] private float bumpDuration = 0.1f;
+    
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
