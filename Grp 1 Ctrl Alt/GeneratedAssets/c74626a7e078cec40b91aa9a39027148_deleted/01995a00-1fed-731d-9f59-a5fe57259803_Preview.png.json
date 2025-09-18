@@ -1,0 +1,11 @@
+{
+    "asset": "c74626a7e078cec40b91aa9a39027148",
+    "fileName": "01995a00-1fed-731d-9f59-a5fe57259803_Preview.png",
+    "prompt": "i want a distorsion shader material like a drunk man",
+    "negativePrompt": "",
+    "model": "575ecf67-4425-4939-97b9-5e138b8ee234",
+    "modelName": "Unity Texture2D",
+    "customSeed": 1866874498,
+    "w3CTraceId": "3c14fa343574e9ed290839fc800b90a5",
+    "refinementMode": "Generation"
+}

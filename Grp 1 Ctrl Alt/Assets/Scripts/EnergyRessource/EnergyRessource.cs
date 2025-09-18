@@ -40,7 +40,11 @@ public class EnergyRessource : MonoBehaviour
         while (true)
         {
             Remove(1f);
-            yield return new WaitForSeconds(1f / looseSpeed);
+            if (_actualEnergyValue <= 0f)
+            {
+                GameManager.INSTANCE.Loose(false);
+            }
+            yield return new WaitForSecondsRealtime(1f / looseSpeed);
         }
     }
 }

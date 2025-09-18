@@ -96,5 +96,68 @@ PrefabInstance:
     m_RemovedGameObjects:
     - {fileID: 8513859187771203891, guid: 52a06df79b41b0243a48273d55ce54fb, type: 3}
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 52a06df79b41b0243a48273d55ce54fb, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4075883291148374327}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 52a06df79b41b0243a48273d55ce54fb, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 433723921271480338}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 52a06df79b41b0243a48273d55ce54fb, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5416443887342736375}
   m_SourcePrefab: {fileID: 100100000, guid: 52a06df79b41b0243a48273d55ce54fb, type: 3}
+--- !u!1 &9163264450516190124 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 52a06df79b41b0243a48273d55ce54fb, type: 3}
+  m_PrefabInstance: {fileID: 8352802533226757885}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &4075883291148374327
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9163264450516190124}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26e451259b686034ba2982eb5f8c19d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Bump
+  bumpForce: 800
+  bumpDuration: 0.1
+--- !u!65 &433723921271480338
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9163264450516190124}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.87253, y: 1.5544602, z: 0.8212981}
+  m_Center: {x: 2.2982244, y: 0.27723008, z: 0.29136205}
+--- !u!114 &5416443887342736375
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9163264450516190124}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67e5174f6fdc32a4bb085bcb3088ce77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CarScript
+  penality: 15
+  bump: 0

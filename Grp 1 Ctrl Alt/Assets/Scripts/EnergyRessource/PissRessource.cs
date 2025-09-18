@@ -45,7 +45,7 @@ public class PissRessource : MonoBehaviour
         while (true)
         {
             Remove(1f);
-            yield return new WaitForSeconds(1f / looseSpeed);
+            yield return new WaitForSecondsRealtime(1f / looseSpeed);
         }
     }
 }

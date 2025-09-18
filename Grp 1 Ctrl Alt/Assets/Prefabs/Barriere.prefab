@@ -71,5 +71,68 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 3a16a2e32f8805a42a6193a5cae18ac1, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1045188963676164718}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 3a16a2e32f8805a42a6193a5cae18ac1, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8570293718542814245}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 3a16a2e32f8805a42a6193a5cae18ac1, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3582389538362112210}
   m_SourcePrefab: {fileID: 100100000, guid: 3a16a2e32f8805a42a6193a5cae18ac1, type: 3}
+--- !u!1 &2523530821304036497 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 3a16a2e32f8805a42a6193a5cae18ac1, type: 3}
+  m_PrefabInstance: {fileID: 3441885054037299648}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1045188963676164718
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2523530821304036497}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.045644816, y: 0.0022184104, z: 0.020747958}
+  m_Center: {x: 0.0000033136457, y: 0.0000039277365, z: 0.010339453}
+--- !u!114 &8570293718542814245
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2523530821304036497}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26e451259b686034ba2982eb5f8c19d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Bump
+  bumpForce: 800
+  bumpDuration: 0.1
+--- !u!114 &3582389538362112210
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2523530821304036497}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67e5174f6fdc32a4bb085bcb3088ce77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CarScript
+  penality: 15
+  bump: 0

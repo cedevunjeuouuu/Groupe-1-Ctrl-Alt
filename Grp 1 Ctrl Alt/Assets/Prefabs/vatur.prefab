@@ -54,8 +54,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 4.041315, y: 2.5396018, z: 2.1961336}
-  m_Center: {x: -0.22409776, y: 1.3590273, z: 0.03943802}
+  m_Size: {x: 3.7924204, y: 2.5396018, z: 2.1961336}
+  m_Center: {x: 1.8926616, y: 1.3590271, z: 0.03943801}
 --- !u!114 &8399646527571133008
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -70,6 +70,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::CarScript
   penality: 25
   bump: 10
+  wantToDestroy: 1
 --- !u!114 &5636224987938166012
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -82,9 +83,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35b73918cf19206f7874bb225182ed4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CarMover
-  speed: 2
+  speed: 1
   sprite: {fileID: 1506209496781883214}
-  defaultplayer: {fileID: 0}
+  offset: 0
 --- !u!1 &2187275528728000177
 GameObject:
   m_ObjectHideFlags: 0
