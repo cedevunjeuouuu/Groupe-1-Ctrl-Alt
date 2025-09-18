@@ -2,15 +2,11 @@ using UnityEngine;
 
 public class Mover : MonoBehaviour
 {
-    [SerializeField]
-    private float speed;
 
-    [SerializeField]
-    private Vector3 direction;
+    public static float speed = 80;
 
     void Update()
     {
-        transform.position += direction * speed * Time.deltaTime;
-
+        transform.position += Vector3.back * speed * Time.deltaTime;
     }
 }

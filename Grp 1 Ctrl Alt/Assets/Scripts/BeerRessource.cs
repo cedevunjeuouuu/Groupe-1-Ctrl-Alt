@@ -5,8 +5,8 @@ using UnityEngine;
 public class BeerRessource : MonoBehaviour
 {
     [SerializeField] private int startBeer = 2;
-    [SerializeField] private TMP_Text textNumberOfBeer;
-    private int _actualBeer;
+    [SerializeField] private TMP_Text textNumberOfBeer; 
+    [HideInInspector] public int _actualBeer;
     private void Start()
     {
         _actualBeer = startBeer;
@@ -22,6 +22,7 @@ public class BeerRessource : MonoBehaviour
     {
         _actualBeer -= value;
         UpdateUi();
+        
     }
 
     void UpdateUi()

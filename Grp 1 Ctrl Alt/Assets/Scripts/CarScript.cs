@@ -8,14 +8,20 @@ public class CarScript : MonoBehaviour
     [SerializeField]
     private float bump = 10f;
 
+    [SerializeField]
+    private bool wantToDestroy = false;
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
         {
+            GameManager.INSTANCE.camera.Shake();
             FindFirstObjectByType<SusRessource>()?.Add(penality);
-            other.GetComponent<PlayerController>().DoBump(bump * Mathf.Sign(transform.position.x - other.transform.position.x));
+            if (wantToDestroy)
+            {
+                Destroy(gameObject);
+            }
+            
         }
-    }
-
-    // rajouter des fonctions genre appel de phare et tout pour immersion qui sont appelés quand on se rapproche du player
+    }   
 }

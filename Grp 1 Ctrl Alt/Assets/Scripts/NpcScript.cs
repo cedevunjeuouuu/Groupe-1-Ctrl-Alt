@@ -5,25 +5,42 @@ using UnityEngine;
 public class NpcScript : MonoBehaviour
 {
     [SerializeField] private float penality = 10f;
-    [SerializeField] private GameObject textBubble;
-    private void OnTriggerEnter(Collider other)
+    [SerializeField] private float energyPenality = 10f;
+    [SerializeField] private bool isCivil;
+    private GameObject textBubble;
+
+    void Awake()
+    {
+        StartCoroutine(Wait());
+    }
+
+    IEnumerator Wait()
+    {
+        yield return new WaitForSecondsRealtime(0.1f);
+        if (isCivil)
+        {
+            textBubble = GameManager.INSTANCE.GetCivil();
+        }
+        else
+        {
+            textBubble = GameManager.INSTANCE.GetFou();
+        }
+    }
+    void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
         {
+            GameManager.INSTANCE.camera.Shake();
             FindFirstObjectByType<SusRessource>().Add(penality);
             textBubble.SetActive(true);
-            StartCoroutine(WaitForEndInteraction()); // temporaire
+            StartCoroutine(WaitForEndInteraction());
         }
     }
 
-    IEnumerator WaitForEndInteraction() // temporaire a remplacer par un input
+    IEnumerator WaitForEndInteraction()
     {
-        yield return new WaitForSeconds(3f);
-        StopInteraction();
-    }
-
-    void StopInteraction()
-    {
+        yield return new WaitForSecondsRealtime(3f);
         textBubble.SetActive(false);
     }
+
 }

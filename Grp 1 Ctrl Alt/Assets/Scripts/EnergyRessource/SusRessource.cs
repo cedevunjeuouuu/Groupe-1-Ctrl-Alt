@@ -26,9 +26,9 @@ public class SusRessource : MonoBehaviour
         _actualEnergyValue += value;
         sliderRef.value = _actualEnergyValue;
 
-        if (_actualEnergyValue > 100f)
+        if (_actualEnergyValue >= 100f)
         {
-            // do stuff
+            GameManager.INSTANCE.Loose(true);
         }
         _actualEnergyValue = MathF.Min(sliderRef.maxValue, _actualEnergyValue);
     }
@@ -45,7 +45,7 @@ public class SusRessource : MonoBehaviour
         while (true)
         {
             Remove(1f);
-            yield return new WaitForSeconds(1f / looseSpeed);
+            yield return new WaitForSecondsRealtime(1f / looseSpeed);
         }
     }
 }
