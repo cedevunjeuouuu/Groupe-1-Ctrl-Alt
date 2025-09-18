@@ -22,11 +22,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 39dc34543e9603f4ba602564b3e32d9f, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.7071067
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 39dc34543e9603f4ba602564b3e32d9f, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.7071069
+      value: -0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 39dc34543e9603f4ba602564b3e32d9f, type: 3}
       propertyPath: m_LocalRotation.y
@@ -38,7 +38,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 39dc34543e9603f4ba602564b3e32d9f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
+      value: -90
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 39dc34543e9603f4ba602564b3e32d9f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -48,6 +48,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 39dc34543e9603f4ba602564b3e32d9f, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: d4299cb65598bcd42ac0fc0a9c12f6be, type: 2}
+    - target: {fileID: -7511558181221131132, guid: 39dc34543e9603f4ba602564b3e32d9f, type: 3}
+      propertyPath: 'm_Materials.Array.data[1]'
+      value: 
+      objectReference: {fileID: 2100000, guid: d4299cb65598bcd42ac0fc0a9c12f6be, type: 2}
     - target: {fileID: 919132149155446097, guid: 39dc34543e9603f4ba602564b3e32d9f, type: 3}
       propertyPath: m_Name
       value: Batiment1_rdc_sansEscalier
