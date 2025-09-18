@@ -84,7 +84,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35b73918cf19206f7874bb225182ed4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CarMover
-  speed: 1
+  speed: 2
   sprite: {fileID: 1506209496781883214}
   offset: 0
 --- !u!1 &2187275528728000177
