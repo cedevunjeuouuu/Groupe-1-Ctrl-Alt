@@ -5,6 +5,7 @@ public class CameraShake : MonoBehaviour
 {
     public float duration = 0.5f;
     public float strength = 0.5f;
+    [HideInInspector] public bool canShake = true;
 
     private Vector3 initialLocalPos;
     private Coroutine shakeCoroutine;
@@ -17,8 +18,14 @@ public class CameraShake : MonoBehaviour
     {
         if (shakeCoroutine != null)
             StopCoroutine(shakeCoroutine);
-
-        shakeCoroutine = StartCoroutine(DoShake());
+        if (canShake)
+        {
+            shakeCoroutine = StartCoroutine(DoShake());
+        }
+        else 
+        {
+            StopCoroutine(DoShake());
+        }
     }
 
     private IEnumerator DoShake()

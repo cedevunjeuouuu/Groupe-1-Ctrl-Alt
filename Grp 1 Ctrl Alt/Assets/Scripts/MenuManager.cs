@@ -12,6 +12,10 @@ public class MenuManager : MonoBehaviour
     {
         SceneManager.LoadScene(1);
     }
+    public void OnDrink(InputValue inputValue)
+    {
+        SceneManager.LoadScene(3);
+    }
 
     void Start()
     {

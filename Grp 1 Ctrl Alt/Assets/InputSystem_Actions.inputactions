@@ -7,15 +7,6 @@
             "id": "df70fa95-8a34-4494-b137-73ab6b9c7d37",
             "actions": [
                 {
-                    "name": "MousePos",
-                    "type": "Value",
-                    "id": "1b92ea07-9937-4ff3-8a80-2ace53d6e219",
-                    "expectedControlType": "Vector2",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": true
-                },
-                {
                     "name": "MouseDelta",
                     "type": "Value",
                     "id": "e2a33f9d-7572-46c3-963c-73988ceee83b",
@@ -23,99 +14,17 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
-                },
-                {
-                    "name": "Beer",
-                    "type": "Button",
-                    "id": "6ea1827e-1c57-4c62-bacb-d37f3093eb1f",
-                    "expectedControlType": "",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
-                },
-                {
-                    "name": "Drink",
-                    "type": "Button",
-                    "id": "03f52c81-9b18-49a5-82d4-a512590b2a72",
-                    "expectedControlType": "",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
-                },
-                {
-                    "name": "Launch",
-                    "type": "Button",
-                    "id": "e12b6055-0f9d-4154-94b2-1e39ff60cea9",
-                    "expectedControlType": "",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
                 }
             ],
             "bindings": [
                 {
                     "name": "",
-                    "id": "db4c7aab-d971-4a9b-9002-f2ca159dd538",
-                    "path": "<Mouse>/position",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": ";Keyboard&Mouse",
-                    "action": "MousePos",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "d336bd5b-9717-4c76-a441-3089de688762",
+                    "id": "0857f52a-084c-4f62-b09c-67d6ff0605ee",
                     "path": "<Mouse>/delta/x",
                     "interactions": "",
                     "processors": "",
-                    "groups": "",
+                    "groups": ";Keyboard&Mouse;Gamepad;Touch;Joystick;XR",
                     "action": "MouseDelta",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "1bb29810-e71c-4085-927f-63d7dff6c528",
-                    "path": "",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "MouseDelta",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "eed0066b-da1c-4676-833e-99aa88285098",
-                    "path": "<Keyboard>/anyKey",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Beer",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "42abb6aa-1cc7-4fe7-8bd3-85a0451ea78a",
-                    "path": "<Keyboard>/d",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Drink",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "907a483e-caa8-4684-bb48-add4cf9d7531",
-                    "path": "<Keyboard>/l",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Launch",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

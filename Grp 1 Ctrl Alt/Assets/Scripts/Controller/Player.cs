@@ -31,7 +31,7 @@ public class Player : MonoBehaviour
     void Start()
     {
         rb.maxAngularVelocity = 30f;
-        noiseOffset = Random.Range(0f, 100f);
+        noiseOffset = Random.Range(0f, 100f); 
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
     }
@@ -43,6 +43,7 @@ public class Player : MonoBehaviour
 
     void FixedUpdate()
     {
+        mouseX = Mouse.current.delta.value.x;
         float noise = Mathf.PerlinNoise(Time.time * alcoholLevel * 5f + noiseOffset, 0f) * 2f - 1f;
         suddenTorqueTimer -= Time.fixedDeltaTime;
         float suddenTorque = 0f;
