@@ -27,6 +27,8 @@ public class GameManager : MonoBehaviour
     [SerializeField] private float ppPenalty = 25f;
     [SerializeField] private GameObject canvas;
     [SerializeField] private TMP_Text text;
+    [SerializeField] private TMP_Text textDistance;
+    [SerializeField] private TMP_Text textBeer;
     [SerializeField] private float timeToMenu = 5f;
     [SerializeField] private Light lightPolice;
 
@@ -95,6 +97,8 @@ public class GameManager : MonoBehaviour
         canvas.SetActive(true);
         int actualScore = _allBeersConsumed * _score;
         text.text = "Score : " + actualScore;
+        textBeer.text = _allBeersConsumed.ToString();
+        textDistance.text = _score.ToString();
         if (PlayerPrefs.GetInt("highScore3") < actualScore)
         {
             if (PlayerPrefs.GetInt("highScore2") < actualScore)
