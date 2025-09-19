@@ -487,7 +487,7 @@ MonoBehaviour:
   camera: {fileID: 330585548}
   canPee: 1
   maxSpeed: 15
-  timeAcceleration: 0.05
+  timeAcceleration: 0.1
   textCivil: {fileID: 697359746}
   textFou: {fileID: 1981209494}
   imageFade: {fileID: 351620156}
@@ -6016,8 +6016,8 @@ MonoBehaviour:
   alcoholLevel: 1.5
   maxMoveSpeed: 150
   chaos: 1.25
-  mouseSensibility: 10
-  balanceForce: 50
+  mouseSensibility: 7
+  balanceForce: 25
   maxAngle: 45
   maxMoveAngle: 40
   rb: {fileID: 491724546}
@@ -6624,6 +6624,12 @@ MonoBehaviour:
   - {fileID: 4399150675028675903, guid: 56d2a7db2d84e2f41823fe6f561e6745, type: 3}
   - {fileID: 6203460585690437808, guid: 5ac88967ee7c5a349831c222a2e6aeea, type: 3}
   - {fileID: 5239179813663927265, guid: ddd7d4e5ac6ae4349a233eedc1afcda6, type: 3}
+  - {fileID: 4399150675028675903, guid: 1eefb1d144a427c48a25f64a3c9941fc, type: 3}
+  - {fileID: 6203460585690437808, guid: 6466aaecd05303843af8c8d47f503aaa, type: 3}
+  - {fileID: 5239179813663927265, guid: e1afbccb70465bb45bce2e4dca18fdac, type: 3}
+  - {fileID: 2336159256110446426, guid: 093ed53f696f81d4491e927b19f0f769, type: 3}
+  - {fileID: 7177394183177655726, guid: 9d62af2250a0bb54e80e9054ba96a5d2, type: 3}
+  - {fileID: 6825572168749126264, guid: a6a5f9646ea77fc409b4fa02893d2762, type: 3}
   levelLenght: 21.7
 --- !u!4 &801736423
 Transform:
