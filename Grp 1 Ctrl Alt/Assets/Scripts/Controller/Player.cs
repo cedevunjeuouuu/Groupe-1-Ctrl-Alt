@@ -43,7 +43,7 @@ public class Player : MonoBehaviour
 
     void FixedUpdate()
     {
-        mouseX = Mouse.current.delta.value.x;
+        mouseX = Mouse.current.delta.value.x / mouseSensibility;
         float noise = Mathf.PerlinNoise(Time.time * alcoholLevel * 5f + noiseOffset, 0f) * 2f - 1f;
         suddenTorqueTimer -= Time.fixedDeltaTime;
         float suddenTorque = 0f;

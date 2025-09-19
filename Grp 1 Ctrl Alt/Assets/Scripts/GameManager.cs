@@ -32,7 +32,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private float timeToMenu = 5f;
     [SerializeField] private Light lightPolice;
 
-    private int _allBeersConsumed;
+    private int _allBeersConsumed = 1;
     private int _score;
     private bool lightState;
     private void Start()
